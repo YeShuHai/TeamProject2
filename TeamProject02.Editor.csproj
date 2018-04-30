@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{43CE4B77-0ED1-06DF-D6D8-916516C0693A}</ProjectGuid>
+    <ProjectGuid>{4CE6BAF6-9505-1E50-745A-D42DFE744476}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>com.unity.postprocessing.Runtime</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -294,61 +294,91 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Attributes\DisplayNameAttribute.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Attributes\MaxAttribute.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Attributes\MinMaxAttribute.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Attributes\PostProcessAttribute.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\AmbientOcclusion.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\AutoExposure.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\Bloom.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\ChromaticAberration.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\ColorGrading.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\DepthOfField.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\Dithering.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\FastApproximateAntialiasing.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\Fog.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\Grain.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\MotionBlur.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\MultiScaleVO.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\ScalableAO.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\ScreenSpaceReflections.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\SubpixelMorphologicalAntialiasing.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\TemporalAntialiasing.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Effects\Vignette.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Monitors\HistogramMonitor.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Monitors\LightMeterMonitor.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Monitors\Monitor.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Monitors\VectorscopeMonitor.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Monitors\WaveformMonitor.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\ParameterOverride.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessBundle.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessDebug.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessDebugLayer.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessEffectRenderer.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessEffectSettings.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessEvent.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessLayer.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessManager.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessProfile.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessRenderContext.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessResources.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\PostProcessVolume.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\ColorUtilities.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\HableCurve.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\HaltonSeq.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\LogHistogram.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\MeshUtilities.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\PropertySheet.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\PropertySheetFactory.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\RuntimeUtilities.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\ShaderIDs.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\Spline.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\TargetPool.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\TextureFormatUtilities.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\TextureLerper.cs" />
-    <Compile Include="Assets\2DGamekit\Utilities\PostProcessing\Runtime\Utils\XRSettings.cs" />
+    <ProjectReference Include="TeamProject02.csproj">
+      <Project>{C0F78EDB-25B3-0077-BCE7-45E89F7890F0}</Project>
+      <Name>TeamProject02</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.postprocessing.Editor.csproj">
+      <Project>{8C3967EF-EA5C-CD2A-F191-ADB2A5FEC7D2}</Project>
+      <Name>com.unity.postprocessing.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.postprocessing.Runtime.csproj">
+      <Project>{43CE4B77-0ED1-06DF-D6D8-916516C0693A}</Project>
+      <Name>com.unity.postprocessing.Runtime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\2DGamekit\Scripts\Character\Editor\CharacterStateSetterEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Character\Editor\DamageableEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Character\Editor\DamagerEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Character\Editor\PlayerCharacterEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Character\Editor\PlayerInputEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Localization\Editor\PhraseDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Localization\Editor\TranslatedPhrasesEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Localization\Editor\TranslatorEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Objects\Editor\MovingPlatformEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Objects\Editor\MovingPlatformPreview.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Objects\Editor\PressurePadEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\Editor\DataPersisterEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\Editor\ParameterSetterDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\Editor\SceneNameDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\SceneManagement\Editor\TransitionStartEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Timeline\Editor\DirectorTriggerEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Scripts\Timeline\ScrollingText\Editor\ScrollingTextDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineBasicMultiChannelPerlinEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineBlenderSettingsEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineBlendListCameraEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineBrainEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineClearShotEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineColliderEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineComposerEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineConfinerEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineExternalCameraEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineFramingTransposerEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineFreeLookEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineGroupComposerEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineHardLockToTargetEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineHardLookAtEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineMixingCameraEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineOrbitalTransposerEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachinePathEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachinePOVEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineScreenComposerGuides.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineSmoothPathEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineStateDrivenCameraEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineTargetGroupEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineTrackedDollyEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineTransposerEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineVirtualCameraBaseEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Editors\CinemachineVirtualCameraEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Menus\CinemachineMenu.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\PropertyDrawers\CinemachineBlendDefinitionPropertyDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\PropertyDrawers\GetSetDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\PropertyDrawers\LensSettingsPropertyDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\PropertyDrawers\MinDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Utility\BaseEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Utility\EmbeddedAssetHelpers.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Utility\SaveDuringPlay.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Utility\ScriptableObjectUtility.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Utility\SerializedPropertyHelper.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Windows\AboutWindow.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Windows\CinemachineColliderPrefs.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Base\Editor\Windows\CinemachineSettings.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Blackboard\Editor\ReactorEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\PostFX\Editor\CinemachinePostProcessingEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\PostFX\Editor\PostFXAutoImport.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Cinemachine\Timeline\Editor\CinemachineShotEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\Editor\TimelinePlayableWizard.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\LightControl\Editor\LightControlDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\ScreenFader\Editor\ScreenFaderDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TextSwitcher\Editor\TextSwitcherDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TimeDilation\Editor\TimeDilationDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\DefaultPlayables\TransformTween\Editor\TransformTweenDrawer.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Editor\BTDebug.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Editor\NewSceneCreator.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Editor\RuleTileEditor.cs" />
+    <Compile Include="Assets\2DGamekit\Utilities\Editor\StandardParticlesShaderGUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2DGamekit\Utilities\Cinemachine\ReleaseNotes.txt" />
